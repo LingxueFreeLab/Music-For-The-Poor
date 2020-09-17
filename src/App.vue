@@ -1,25 +1,15 @@
 <template>
-  <div id="app">
-    <Header></Header>
-    <keep-alive>
-      <router-view/>
-    </keep-alive>
-    <Player></Player>
-    <Nav></Nav>
-  </div>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld msg="Hello Vue 3.0 + Vite" />
 </template>
-<script>
-import Header from '@/components/m-header/m-header'
-import Player from '@/components/player/player'
-import Nav from '@/components/nav/nav'
-export default {
-  components: {
-    Header,
-    Player,
-    Nav
-  }
 
+<script>
+import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HelloWorld
+  }
 }
 </script>
-<style lang="stylus">
-</style>
